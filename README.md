@@ -1,6 +1,3 @@
-# active-directory-labs
-Active Directory homelab with clear notes, PowerShell scripts, and process reflections.
-
 # Active Directory Homelab Documentation
 
 This repository documents a series of Active Directory labs I previously completed and am now re-running with proper documentation and structure.
@@ -84,4 +81,4 @@ Redoing and writing them from scratch helps reinforce process thinking and techn
 Portfolio: [https://yairmartinezcybersecurityportfolio.com](https://yairmartinezcybersecurityportfolio.com)  
 LinkedIn: [https://www.linkedin.com/in/yair-martinez-939a17378](https://www.linkedin.com/in/yair-martinez-939a17378)
 
-
+Thanks For Reading!
