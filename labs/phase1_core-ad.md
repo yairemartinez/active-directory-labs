@@ -19,10 +19,10 @@ I originally completed these labs earlier and am now redoing them to record each
 In this lab, I configured a Windows 11 client to use the Domain Controller as its DNS server, enabling proper domain discovery. I then initiated the domain join process by accessing the system settings and specifying the domain name **lab.local**. After providing domain administrator credentials, the workstation successfully joined the domain and rebooted. Upon restart, I validated the join by signing in with a domain account and confirming that the domain relationship was fully established. Additional verification included checking the computer object in Active Directory Users and Computers (ADUC) and confirming DNS resolution back to the Domain Controller.
 
 Client joined to the **lab.local** domain:
-<img width="885" height="964" alt="Screenshot 2025-12-01 155907" src="https://github.com/user-attachments/assets/9a2f6dbd-8239-4024-9405-4d83981bf2cc" />
+<img width="400" height="600" alt="Screenshot 2025-12-01 155907" src="https://github.com/user-attachments/assets/9a2f6dbd-8239-4024-9405-4d83981bf2cc" />
 
 Computer object visible in Active Directory Users and Computers:
-<img width="830" height="661" alt="Screenshot from 2025-12-01 23-49-24" src="https://github.com/user-attachments/assets/f0c84e7d-d808-4867-8b74-3854cda1995f" />
+<img width="400" height="600" alt="Screenshot from 2025-12-01 23-49-24" src="https://github.com/user-attachments/assets/f0c84e7d-d808-4867-8b74-3854cda1995f" />
 
 **Reflection:**  
 This lab reinforced how DNS underpins Active Directory functionality and highlighted the proper workflow for onboarding new workstations. It also demonstrated the value of verification steps such as DNS testing and confirming AD computer objects.
