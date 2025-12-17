@@ -104,3 +104,5 @@ Client-side validation showing delayed login attempts after invalid credentials:
 This lab demonstrated how domain-wide policies significantly improve security posture by reducing weak passwords and brute-force attempts. It also reinforced the importance of validating security controls from an end-user perspective.
 
 
+**Final Thoughts for Phase 2**
+Phase 2 demonstrated how Active Directory and Group Policy centralize user access, reduce manual configuration, and enforce consistent security controls. Documenting these labs clarified how role-based access and standardized policies scale effectively in real IT environments.
