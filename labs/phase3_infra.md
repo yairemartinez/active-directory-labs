@@ -115,23 +115,6 @@ Password reset successfully performed by delegated help desk account:
 Reflection:  
 This lab reinforced the importance of enforcing least privilege in Active Directory by limiting access to only what is operationally necessary. It also highlighted how proper delegation reduces administrative risk while still enabling efficient help desk workflows.
 
-## Lab 15 – Windows LAPS Deployment
-Purpose: Secure local administrator accounts by enforcing unique, rotating passwords stored centrally in Active Directory.
-
-Summary:  
-In this lab, I deployed Windows Local Administrator Password Solution (LAPS) to eliminate the security risk of shared local administrator passwords across domain-joined systems. I first configured Group Policy to enable LAPS, defining password complexity, length, and rotation interval to meet modern security standards. The policy was scoped to the LabComputers organizational unit to ensure only intended workstations were affected. I then verified that client systems successfully applied the policy and generated unique local administrator passwords. Using PowerShell, I retrieved the stored passwords from Active Directory to confirm successful encryption, storage, and access control. Finally, I validated that each workstation had a distinct password and that only authorized principals (Domain Admins) could decrypt and view the credentials.
-
-Screenshot Placeholder:  
-Group Policy Management Editor showing LAPS password settings and policy configuration:  
-
-<img width="600" height="400" alt="Screenshot from 2025-12-19 00-57-24" src="https://github.com/user-attachments/assets/ee112bab-4c72-4126-bc75-798b718f8e44" />
-
-PowerShell output confirming successful retrieval of unique local administrator passwords for different workstations:  
-
-<img width="600" height="400" alt="Screenshot from 2025-12-19 01-11-05" src="https://github.com/user-attachments/assets/70b20a8f-857f-49a2-aa0c-f9048127feab" />
-
-Reflection:  
-This lab reinforced the importance of preventing credential reuse and limiting lateral movement opportunities in Active Directory environments. It also demonstrated how LAPS provides centralized visibility and control over privileged local accounts while maintaining strict access boundaries.
 
 Final Thoughts for Phase 3
 Phase 3 focused on infrastructure services and recovery mechanisms that underpin daily domain operations. Documenting DHCP, DNS, backups, and delegated administration clarified how these components work together to support reliability, security, and operational continuity in real-world Active Directory environments.
