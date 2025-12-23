@@ -1,0 +1,6 @@
+First,Last,User,OU,Groups
+Amy,Arlet,aarlet,"OU=Lab18,DC=lab,DC=local","VPNUsers"
+Bob,Burger,bburger,"OU=Lab18,DC=lab,DC=local","FinanceGroup2"
+Chris,Chen,cchen,"OU=Lab18,DC=lab,DC=local","VPNUsers"
+David,Delly,ddelly,"OU=Lab18,DC=lab,DC=local","VPNUsers"
+Yair,Martinez,ymartinez,"OU=Lab18,DC=lab,DC=local","FinanceGroup2;VPNUsers"
