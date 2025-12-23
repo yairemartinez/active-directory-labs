@@ -82,7 +82,7 @@ The DNS zones were confirmed to be Active Directory–integrated, ensuring repli
 This lab reinforced the critical role DNS plays in Active Directory functionality and day-to-day network operations. Verifying both forward and reverse lookups highlighted how proper DNS hygiene supports reliable authentication, service discovery, and troubleshooting.
 
 ## Lab 13 – Active Directory Recycle Bin + System State Backup
-Purpose: Ensure Active Directory resiliency by enabling rapid object-level recovery and implementing full disaster recovery backups for the Domain Controller.
+**Purpose:** Ensure Active Directory resiliency by enabling rapid object-level recovery and implementing full disaster recovery backups for the Domain Controller.
 
 ### Summary:  
 In this lab, I implemented two complementary recovery mechanisms to protect Active Directory: the Active Directory Recycle Bin and System State Backup. I first enabled the Active Directory Recycle Bin using Active Directory Administrative Center, acknowledging that this action is irreversible and would require change planning and approval in a production environment. 
@@ -120,7 +120,7 @@ Due to virtualization constraints in VirtualBox, backups were validated through 
 This lab reinforced the importance of layered recovery strategies in Active Directory environments, combining fast operational recovery with full disaster recovery preparedness. It also highlighted real-world considerations such as irreversible configuration changes, backup storage isolation, and the compromises sometimes required in virtualized lab environments while still following enterprise-aligned recovery practices.
 
 ## Lab 14 – Delegation of Control (Least Privilege)
-Purpose: Apply least-privilege principles by delegating routine user management tasks without granting full domain administrative access.
+**Purpose:** Apply least-privilege principles by delegating routine user management tasks without granting full domain administrative access.
 
 ### Summary:  
 In this lab, I implemented delegated administration to allow help desk staff to perform common account management tasks while minimizing security risk. I created a dedicated Helpdesk security group and scoped delegation at the LabUsers organizational unit to prevent permissions from affecting the rest of the domain. 
