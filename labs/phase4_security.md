@@ -17,7 +17,7 @@ The goal is to demonstrate practical experience with LAPS, BitLocker, and accoun
 6. Trigger a test lockout and review Event ID 4740 on the Domain Controller.
 
 ## Lab 15 – Windows LAPS Deployment
-Purpose: Secure local administrator accounts by enforcing unique, rotating passwords stored centrally in Active Directory.
+**Purpose:** Secure local administrator accounts by enforcing unique, rotating passwords stored centrally in Active Directory.
 
 ### Summary
 In this lab, I deployed Windows Local Administrator Password Solution (LAPS) to eliminate the security risk of shared local administrator passwords across domain-joined systems. 
@@ -44,7 +44,7 @@ This lab reinforced the importance of preventing credential reuse and limiting l
 
 
 ## Lab 16 – BitLocker with Active Directory Escrow
-Purpose: Protect endpoint data at rest by enforcing BitLocker Drive Encryption on domain joined systems while ensuring recovery options exist for administrative recovery scenarios.
+**Purpose:** Protect endpoint data at rest by enforcing BitLocker Drive Encryption on domain joined systems while ensuring recovery options exist for administrative recovery scenarios.
 
 ### Summary
 In this lab, I enforced BitLocker settings through Group Policy and validated encryption behavior on two domain joined Windows 11 workstations. I created and linked a dedicated GPO to the **LabComputers OU** and configured BitLocker OS drive policies to standardize how encryption is applied across endpoints.
@@ -84,8 +84,7 @@ This lab reinforced that endpoint encryption is not just “turning BitLocker on
 It also highlighted a real constraint: virtualization can introduce edge cases with BitLocker/TPM behavior that you wouldn’t typically see on supported enterprise hardware. In a production environment, I would validate escrow and recovery workflows using physical TPM-backed devices, confirm keys are centrally recoverable, and standardize deployment through imaging and compliance reporting.
 
 ## Lab 17 – Account Lockout Investigation
-Purpose: 
-Develop the ability to triage and investigate real Active Directory account lockouts by enabling advanced auditing, identifying the source of failed authentication attempts, and performing basic root cause analysis (RCA).
+**Purpose:** Develop the ability to triage and investigate real Active Directory account lockouts by enabling advanced auditing, identifying the source of failed authentication attempts, and performing basic root cause analysis (RCA).
 
 ### Summary
 In this lab, I configured Advanced Audit Policy settings on the Domain Controller to capture detailed account lockout events. Specifically, Account Logon and Account Management auditing were enabled to ensure lockout activity was recorded in the Security event log. This configuration provides the visibility required to investigate user authentication issues in enterprise environments.
