@@ -30,7 +30,7 @@ The script also handles group assignment by parsing a semicolon-delimited group 
 After the script completed, Active Directory Users and Computers (ADUC) was used to verify that all users were created in the correct OU and that group memberships were applied as intended.
 
 ### Screenshot:  
-PowerShell execution of `New-BulkUsers.ps1` showing successful creation messages and ADUC view confirming newly created users and security groups  
+**PowerShell execution of `New-BulkUsers.ps1` showing successful creation messages and ADUC view confirming newly created users and security group:** 
 
 <img width="600" height="400" alt="Screenshot from 2025-12-21 22-25-12" src="https://github.com/user-attachments/assets/2283f790-9199-4084-a2a5-684d0a1be629" />
 
@@ -73,13 +73,13 @@ PowerShell was also used to programmatically verify delegation correctness by qu
 - No unnecessary administrative permissions  
 
 ### Screenshots:
-Delegation Verification (PowerShell ACL Output): Shows resolved Active Directory permissions confirming that the Helpdesk group has WriteProperty access to the `lockoutTime` attribute and extended rights for password resets.
+**Delegation Verification (PowerShell ACL Output): Shows resolved Active Directory permissions confirming that the Helpdesk group has WriteProperty access to the `lockoutTime` attribute and extended rights for password resets:**
 
 <img width="600" height="400" alt="e5f79db1-91aa-459e-94a3-a9e26601dbaa" src="https://github.com/user-attachments/assets/1af5d1d8-3fb5-4ba5-9d5f-f5b98bb9310c" />
 
 ---
 
-Help Desk Toolkit Execution (Menu Workflow): Demonstrates the interactive PowerShell menu used by help desk staff to unlock an account, reset a password, and add a user to a group, with real-time success confirmation.
+**Help Desk Toolkit Execution (Menu Workflow): Demonstrates the interactive PowerShell menu used by help desk staff to unlock an account, reset a password, and add a user to a group, with real-time success confirmation:**
 
 <img width="600" height="400" alt="ea49938c-1ce4-4202-a7cd-1da3325035fa" src="https://github.com/user-attachments/assets/656c93bf-3bba-44c7-abb2-cab70ddca93d" />
 
@@ -112,25 +112,25 @@ Policy application was verified directly on client systems by reviewing configur
 - Verified applied policies using `gpresult /h` reports on multiple clients  
 
 ### Screenshots:  
-WinRM GPO configuration
+**WinRM GPO configuration:**
 
 <img width="600" height="400" alt="Screenshot from 2025-12-22 20-48-12" src="https://github.com/user-attachments/assets/12a98a7e-4d97-483b-9da6-784e51afc449" />
 
 ---
 
-Successful Test-WSMan responses and remote command execution output 
+**Successful Test-WSMan responses and remote command execution output:**
 
 <img width="600" height="400" alt="Screenshot from 2025-12-22 20-05-29" src="https://github.com/user-attachments/assets/4a7091ac-5d62-4742-bc73-1ba368e3337f" />
 
 ---
 
-Windows Update policy enforcement on clients
+**Windows Update policy enforcement on clients:**
 
 <img width="600" height="400" alt="Screenshot 2025-12-22 204229" src="https://github.com/user-attachments/assets/02ea7032-27f1-4c1d-8dfb-c3e96ec50fae" />
 
 ---
 
-Group Policy Results reports validating applied settings.
+**Group Policy Results reports validating applied settings:**
 
 <img width="600" height="400" alt="dd267df3-05b1-4274-ba0c-c80e8f51db7e" src="https://github.com/user-attachments/assets/cad95240-df22-4ab1-9c52-a11fa6456941" />
 
