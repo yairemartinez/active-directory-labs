@@ -3,14 +3,14 @@
 This repository documents a series of Active Directory labs I previously completed and am now re-running with proper documentation and structure.
 
 The goal is to rebuild and record my original homelab work with better organization and clarity.  
-Each phase focuses on realistic IT support and system administration workflows—joining clients, managing users, applying GPOs, configuring services, and automating tasks with PowerShell.
+Each phase focuses on realistic IT support and system administration workflows, joining clients, managing users, applying GPOs, configuring services, and automating tasks with PowerShell.
 
 ---
 
 ## Environment Overview
 
 - Windows Server 2022 Domain Controller (lab.local)
-- Windows 10 Pro clients
+- Windows 11 Pro clients
 - Private virtual network (10.0.0.0/24)
 - DNS, DHCP, and Group Policy configured on the DC
 
@@ -22,7 +22,7 @@ I originally built this homelab to strengthen practical IT skills for real-world
 After completing all phases once, I’m now documenting them in a professional format to demonstrate process, repeatability, and technical clarity.
 
 This version emphasizes:
-- Step-by-step documentation
+- Lab documentation
 - Reflection after each phase
 - Organized structure for review or reuse
 - Reproducible PowerShell scripts
@@ -32,7 +32,7 @@ This version emphasizes:
 ## Lab Phases
 
 **Phase 1 – Core AD + Client Join**  
-User, group, and domain setup. Join Windows 10 clients to the domain and apply starter GPOs.
+User, group, and domain setup. Join Windows 11 clients to the domain and apply starter GPOs.
 
 **Phase 2 – User Access and Policies**  
 Drive mappings, shared printers, and GPO restrictions.
@@ -59,13 +59,10 @@ phase5_automation.md
 /scripts
 bulk_user_creation.ps1
 helpdesk_toolkit.ps1
+new_users.csv
 
-/docs
-screenshots/
-network_diagram.png
-ad_structure.png
 
-Each lab document includes goals, step-by-step notes, and a short reflection.
+Each lab document includes goals, notes, and a short reflection.
 
 ---
 
