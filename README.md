@@ -1,81 +1,101 @@
-# Active Directory Homelab Documentation
+# Active Directory Labs
 
-This repository documents a series of Active Directory labs I previously completed and am now re-running with proper documentation and structure.
+This repository documents a hands-on Active Directory lab environment built to reflect real enterprise administration workflows.
+I originally completed many of these labs earlier and am now re-running them with structured documentation, validation steps, and clear reasoning behind each configuration.
 
-The goal is to rebuild and record my original homelab work with better organization and clarity.  
-Each phase focuses on realistic IT support and system administration workflows, joining clients, managing users, applying GPOs, configuring services, and automating tasks with PowerShell.
+This repository focuses on process, configuration, verification, and operational thinking.
 
----
-
-## Environment Overview
-
-- Windows Server 2022 Domain Controller (lab.local)
-- Windows 11 Pro clients
-- Private virtual network (10.0.0.0/24)
-- DNS, DHCP, and Group Policy configured on the DC
+Portfolio: https://yairmartinezcybersecurityportfolio.com
+LinkedIn: https://www.linkedin.com/in/yair-martinez-939a17378
 
 ---
 
-## Why This Project
+## How to Review This Repository
 
-I originally built this homelab to strengthen practical IT skills for real-world support and defensive cybersecurity.  
-After completing all phases once, I’m now documenting them in a professional format to demonstrate process, repeatability, and technical clarity.
+If you are short on time:
 
-This version emphasizes:
-- Lab documentation
-- Reflection after each phase
-- Organized structure for review or reuse
-- Reproducible PowerShell scripts
+- Start with Phase 1 to see foundational domain setup
+- Jump to Phase 4 for security hardening (LAPS, BitLocker, auditing)
+- Review Phase 5 to see PowerShell automation and help desk workflows
+
+Each phase is documented with:
+- Purpose and real-world context
+- What was configured and why
+- Validation steps and screenshots
+- Short reflections focused on operational impact
+
+---
+
+## Lab Environment Overview
+
+- Domain Controller: Windows Server 2022
+- Clients: Windows 11 (multiple domain-joined systems)
+- Domain: lab.local
+- Network: 10.0.0.0/24 (single-site lab)
+- Management tools: Active Directory, Group Policy, PowerShell
+
+This environment was designed to mirror common small-to-mid enterprise deployments rather than isolated, one-off labs.
+
+---
+
+## Repository Structure
+
+active-directory-labs/
+├── README.md
+├── labs/
+│   ├── phase1_core-ad.md
+│   ├── phase2_policies.md
+│   ├── phase3_infrastructure-recovery.md
+│   ├── phase4_security-hardening.md
+│   └── phase5_automation-remote-ops.md
+└── scripts/
+    ├── New-BulkUsers.ps1
+    ├── HelpDesk-Toolkit.ps1
+    └── new_users.csv
+
+Screenshots are embedded directly in the lab documentation to keep each phase self-contained and easy to review.
 
 ---
 
 ## Lab Phases
 
-**Phase 1 – Core AD + Client Join**  
-User, group, and domain setup. Join Windows 11 clients to the domain and apply starter GPOs.
+Phase 1 – Core AD and Client Join  
+Domain creation, DNS dependency, client joins, user and group management, and a baseline GPO.
+Focuses on fundamentals and verification of domain functionality.
 
-**Phase 2 – User Access and Policies**  
-Drive mappings, shared printers, and GPO restrictions.
+Phase 2 – User Access and Policies  
+Shared folders, drive mappings, printer deployment, folder redirection, and user-based Group Policy enforcement.
+Demonstrates role-based access control and centralized configuration.
 
-**Phase 3 – Infrastructure and Recovery**  
-DHCP, DNS cleanup, AD Recycle Bin, and delegated admin roles.
+Phase 3 – Infrastructure and Recovery  
+DHCP and DNS management, AD Recycle Bin, system state backups, and delegated administration.
+Covers recovery readiness and least-privilege operations used in real environments.
 
-**Phase 4 – Security Hardening**  
-Windows LAPS, BitLocker, and account audit configuration.
+Phase 4 – Security Hardening  
+Windows LAPS, BitLocker with Active Directory escrow, and account lockout auditing.
+Focuses on reducing credential risk, protecting data at rest, and improving investigative visibility.
 
-**Phase 5 – Automation and Remote Ops**  
-PowerShell scripts for provisioning, password resets, and remote management.
-
----
-
-## Structure
-/labs
-phase1_core-ad.md
-phase2_policies.md
-phase3_infra.md
-phase4_security.md
-phase5_automation.md
-
-/scripts
-bulk_user_creation.ps1
-helpdesk_toolkit.ps1
-new_users.csv
-
-
-Each lab document includes goals, notes, and a short reflection.
+Phase 5 – Automation and Remote Operations  
+PowerShell automation for bulk provisioning, help desk tooling, and remote management using WinRM.
+Demonstrates operational scripting, delegation-aware automation, and scalable administration.
 
 ---
 
-## Reflection
+## What This Project Demonstrates
 
-This repository is not just a walkthrough—it’s a re-documentation of completed labs.  
-Redoing and writing them from scratch helps reinforce process thinking and technical communication, the same habits used in professional IT environments.
+- Practical Active Directory administration beyond basic setup
+- Strong understanding of DNS, Group Policy, and identity workflows
+- Security hardening with validation, not just configuration
+- PowerShell used for automation, verification, and troubleshooting
+- Least-privilege thinking applied consistently across labs
+- Clear documentation habits aligned with production environments
+
+All credentials, users, and systems referenced are lab-only and non-production.
 
 ---
 
-## Links
+## Closing Note
 
-Portfolio: [https://yairmartinezcybersecurityportfolio.com](https://yairmartinezcybersecurityportfolio.com)  
-LinkedIn: [https://www.linkedin.com/in/yair-martinez-939a17378](https://www.linkedin.com/in/yair-martinez-939a17378)
+This repository is intentionally structured to show how I work, not just what I configured.
+Each phase reflects the same mindset used in real IT environments: plan, implement, verify, document, and iterate.
 
-Thanks For Reading!
