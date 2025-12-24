@@ -6,6 +6,7 @@ I originally completed many of these labs earlier and am now re-running them wit
 This repository focuses on process, configuration, verification, and operational thinking.
 
 Portfolio: https://yairmartinezcybersecurityportfolio.com
+
 LinkedIn: https://www.linkedin.com/in/yair-martinez-939a17378
 
 ---
