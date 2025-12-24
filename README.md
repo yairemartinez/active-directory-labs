@@ -40,18 +40,20 @@ This environment was designed to mirror common small-to-mid enterprise deploymen
 
 ## Repository Structure
 
-active-directory-labs/
+```text
+.
 ├── README.md
-├── labs/
+├── labs
 │   ├── phase1_core-ad.md
 │   ├── phase2_policies.md
 │   ├── phase3_infrastructure-recovery.md
 │   ├── phase4_security-hardening.md
 │   └── phase5_automation-remote-ops.md
-└── scripts/
+└── scripts
     ├── New-BulkUsers.ps1
     ├── HelpDesk-Toolkit.ps1
     └── new_users.csv
+```
 
 Screenshots are embedded directly in the lab documentation to keep each phase self-contained and easy to review.
 
